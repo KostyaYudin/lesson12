@@ -1,0 +1,55 @@
+header{
+    .header{
+        margin: 15px 0;
+        
+        img{
+            width: 50px;
+            height: 50px;
+        }
+
+        label{
+            display: none;
+        }  
+
+        input{
+            display: none;
+        }
+
+        nav{
+            width: 65%;
+            display: flex;
+            align-self: center;
+
+            ul{
+                                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transition: 0.9s;
+
+                li{ 
+                
+                   
+                        &:hover{
+                            box-shadow: $shadow;
+                        
+                    }
+                    
+                    a{
+                        text-decoration: none;
+                        transition: 0.1s;                            
+                        font-size: 12px;
+                        color: $head-f-col;
+                        &:hover {
+                            @include button(10px 20px, 12px);
+                        }
+                    }
+                }            
+            }
+        }
+    }
+}
+
+
+
+
+

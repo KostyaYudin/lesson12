@@ -1,0 +1,52 @@
+@media (max-width:992px){
+    
+    .header{
+        .container{
+            .row{
+                label{
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    color: #fff;
+                    background-color: $yellow;
+                    border-radius: 3px;
+                }
+                input{
+                    display: none;
+                    &:checked + nav{
+                        display:flex;
+                    }
+                }
+                nav{
+                    display: none;
+                    position: absolute;
+                    text-align: right;
+                    ul{ 
+                        flex-direction: column;
+                        max-width: 400px;
+                        padding: 0 0 0 100px;
+                        li{ 
+                            max-width: 50%;
+                            &:first-child a{
+                                padding: 0;
+                                color: #919191;
+                                background-color: #fff;
+                                border-radius: none;
+                                &:hover{
+                                    color: #fff;
+                                }
+                            }
+                            a{
+                                &:hover{
+                               
+                                padding: 1px 5px; 
+                                } 
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}
